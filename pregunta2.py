@@ -61,10 +61,11 @@ class OperacionesLista:
         else:
             return -1
 
-lista = [18, 50, 210, 80, 145, 333, 70, 30]
-operaciones = OperacionesLista(lista)
-operaciones.imprimir_multiplos_10_menores_200()
-print(operaciones.merge_sort())
-print(operaciones.buscar_indice(145))
-print(operaciones.buscar_indice(1000))
+if __name__ == "__main__":
+    lista = [18, 50, 210, 80, 145, 333, 70, 30]
+    operaciones = OperacionesLista(lista)
+    operaciones.imprimir_multiplos_10_menores_200()
+    print(operaciones.merge_sort())
+    print(operaciones.buscar_indice(145))
+    print(operaciones.buscar_indice(1000))
    
