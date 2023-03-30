@@ -17,9 +17,9 @@ class OperacionesLista:
             if num % 10 == 0 and num < 200:
                 print(num)
 
-                # Si encontramos un número mayor que 300, detenemos el programa
-                if num > 300:
-                    break
+            # Si encontramos un número mayor que 300, detenemos el programa
+            if num > 300:
+                break
 
     def merge_sort(self):
         def mergesort(lista):
