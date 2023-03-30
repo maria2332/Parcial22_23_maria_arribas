@@ -19,3 +19,6 @@ Implementa el método str y haz que muestre el nombre y la nota del alumno
 Crea algun objeto de la clase Alumno
 Realiza print de esos objetos para visualizar por pantalla la información del str
 """
+
+
+
