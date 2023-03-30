@@ -146,7 +146,7 @@ class Polinomio(object):
         else:
             print("No se puede dividir")
         return paux
-
+    
 if __name__ == "__main__":
     p1 = Polinomio()
     p1.agregar_termino(3, 7) # Agrega el término 7x^3
