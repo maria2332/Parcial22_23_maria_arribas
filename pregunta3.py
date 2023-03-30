@@ -19,10 +19,8 @@ class Alumno:
             print("Aprobado")
         else:
             print("Suspendido")
-
-    def __str__(self):
-        return f"Nombre: {self.nombre} Nota: {self.nota}"
     
+
 alumno1 = Alumno("Maria", 10)
 alumno2 = Alumno("Pedro", 3)
 print(alumno1)

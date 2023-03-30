@@ -20,5 +20,25 @@ Crea algun objeto de la clase Alumno
 Realiza print de esos objetos para visualizar por pantalla la información del str
 """
 
+class Alumno:
+    def __init__(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+        print("El alumno se ha creado con éxito")
 
+    def calificacion(self):
+        if self.nota >= 5:
+            print("Aprobado")
+        else:
+            print("Suspendido")
 
+    def __str__(self):
+        return f"{self.nombre} ha sacado un {self.nota} en el examen"
+
+if __name__ == "__main__":
+    alumno1 = Alumno("Maria", 10)
+    alumno2 = Alumno("Pedro", 3)
+    print(alumno1)
+    print(alumno2)
+    alumno1.calificacion()
+    alumno2.calificacion()    
