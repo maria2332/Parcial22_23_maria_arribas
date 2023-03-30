@@ -32,9 +32,10 @@ class Encriptacion:
 
     def __str__(self):
         return f"Texto encriptado: {self.encriptado} Texto desencriptado: {self.desencriptado}"
-    
-texto = "Hola mundo"
-encriptacion = Encriptacion(texto)
-print(encriptacion.encriptar())
-print(encriptacion.desencriptar())
-print(encriptacion)
+
+if __name__ == "__main__": 
+    texto = "Hola mundo"
+    encriptacion = Encriptacion(texto)
+    print(encriptacion.encriptar())
+    print(encriptacion.desencriptar())
+    print(encriptacion)
