@@ -7,3 +7,26 @@ Experimentación (0,5 Puntos)
 Crea algunos alumnos
 Prueba a ejecutar el método calificación de cada objeto que has creado
 """
+
+class Alumno:
+    def __init__(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+        print("El alumno se ha creado con éxito")
+
+    def calificacion(self):
+        if self.nota >= 5:
+            print("Aprobado")
+        else:
+            print("Suspendido")
+
+    def __str__(self):
+        return f"Nombre: {self.nombre} Nota: {self.nota}"
+    
+alumno1 = Alumno("Maria", 10)
+alumno2 = Alumno("Pedro", 3)
+print(alumno1)
+print(alumno2)
+alumno1.calificacion()
+alumno2.calificacion()
+
