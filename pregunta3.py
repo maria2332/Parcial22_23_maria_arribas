@@ -14,17 +14,16 @@ class Alumno:
         self.nota = nota
         print("El alumno se ha creado con éxito")
 
-    def calificacion(self):
+    def calificacion(self, nota, nombre):
         if self.nota >= 5:
-            print("Aprobado")
+            print(f"{nombre} ha aprobado con un {nota}")
         else:
-            print("Suspendido")
+            print(f"{nombre} ha suspendido con un {nota}")
     
+if __name__ == "__main__":
+    alumno1 = Alumno("Maria", 10)
+    alumno2 = Alumno("Pedro", 3)
+    alumno1.calificacion(alumno1.nota, alumno1.nombre)
+    alumno2.calificacion(alumno2.nota, alumno2.nombre)
 
-alumno1 = Alumno("Maria", 10)
-alumno2 = Alumno("Pedro", 3)
-print(alumno1)
-print(alumno2)
-alumno1.calificacion()
-alumno2.calificacion()
 
